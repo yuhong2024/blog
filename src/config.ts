@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "Echooler",
 	subtitle: "Y.Hong's Blog",
-	lang: "zh_CN", // 设置为中文
+	lang: "en", // Changed to English
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
@@ -28,7 +28,13 @@ export const siteConfig: SiteConfig = {
 		enable: true, // Display the table of contents on the right side of the post
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
-	favicon: [],
+	favicon: [
+		{
+			src: "/favicon/icon.png",
+			theme: "light",
+			sizes: "32x32",
+		},
+	],
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -42,7 +48,7 @@ export const navBarConfig: NavBarConfig = {
 			external: true,
 		},
 		{
-			name: "知乎",
+			name: "Zhihu",
 			url: "https://www.zhihu.com/people/zhai-xing-3-26",
 			external: true,
 		},
@@ -57,7 +63,7 @@ export const navBarConfig: NavBarConfig = {
 			external: true,
 		},
 		{
-			name: "学术主页",
+			name: "Academic",
 			url: "https://yuhong2024.github.io/index.html",
 			external: true,
 		},
@@ -65,9 +71,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/me.jpg",
 	name: "Echooler",
-	bio: "Y.Hong 本科生 SWU",
+	bio: "Y.Hong | Undergraduate Student at SWU",
 	links: [
 		{
 			name: "GitHub",
@@ -75,7 +81,7 @@ export const profileConfig: ProfileConfig = {
 			url: "https://github.com/yuhong2024",
 		},
 		{
-			name: "知乎",
+			name: "Zhihu",
 			icon: "fa6-brands:zhihu",
 			url: "https://www.zhihu.com/people/zhai-xing-3-26",
 		},
@@ -90,7 +96,7 @@ export const profileConfig: ProfileConfig = {
 			url: "https://space.bilibili.com/1554305035",
 		},
 		{
-			name: "学术主页",
+			name: "Academic",
 			icon: "fa6-solid:graduation-cap",
 			url: "https://yuhong2024.github.io/index.html",
 		},
