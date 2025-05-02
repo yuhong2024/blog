@@ -71,9 +71,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/me.jpg",
+	avatar: "assets/images/me.jpg",
 	name: "Echooler",
-	bio: "Y.Hong | Undergraduate Student at SWU",
+	bio: "Y.Hong @ SWU",
 	links: [
 		{
 			name: "GitHub",
