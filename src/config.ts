@@ -48,7 +48,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/me.jpg",
 	name: "Blog Author",
-	bio: "SWU",
+	bio: "",
 	links: [],
 };
 
