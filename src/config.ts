@@ -7,9 +7,9 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Echooler",
-	subtitle: "Y.Hong's Blog",
-	lang: "en", // Changed to English
+	title: "My Blog",
+	subtitle: "A Blog Built with Astro",
+	lang: "en",
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
@@ -42,65 +42,14 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
-		{
-			name: "GitHub",
-			url: "https://github.com/yuhong2024",
-			external: true,
-		},
-		{
-			name: "Zhihu",
-			url: "https://www.zhihu.com/people/zhai-xing-3-26",
-			external: true,
-		},
-		{
-			name: "YouTube",
-			url: "https://studio.youtube.com/channel/UCRVaRv7mraTBpHmtPO3i9vw",
-			external: true,
-		},
-		{
-			name: "Bilibili",
-			url: "https://space.bilibili.com/1554305035",
-			external: true,
-		},
-		{
-			name: "Academic",
-			url: "https://yuhong2024.github.io/index.html",
-			external: true,
-		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/me.jpg",
-	name: "Echooler",
-	bio: "Y.Hong @ SWU",
-	links: [
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/yuhong2024",
-		},
-		{
-			name: "Zhihu",
-			icon: "fa6-brands:zhihu",
-			url: "https://www.zhihu.com/people/zhai-xing-3-26",
-		},
-		{
-			name: "YouTube",
-			icon: "fa6-brands:youtube",
-			url: "https://studio.youtube.com/channel/UCRVaRv7mraTBpHmtPO3i9vw",
-		},
-		{
-			name: "Bilibili",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/1554305035",
-		},
-		{
-			name: "Academic",
-			icon: "fa6-solid:graduation-cap",
-			url: "https://yuhong2024.github.io/index.html",
-		},
-	],
+	name: "Blog Author",
+	bio: "SWU",
+	links: [],
 };
 
 export const licenseConfig: LicenseConfig = {

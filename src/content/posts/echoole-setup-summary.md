@@ -1,14 +1,14 @@
 ---
-title: "个人博客 echoole.com 搭建技术路线总结"
+title: "个人博客搭建技术路线总结"
 published: 2025-05-02
-description: "从 0 到上线，完整记录 echoole 博客构建过程与技术选型"
+description: "从 0 到上线，完整记录博客构建过程与技术选型"
 tags: [博客, Astro, 部署, Vercel, Markdown]
 category: 建站日志
 lang: zh
 draft: false
 ---
 
-# ✅ 技术路线总结：个人博客站点 echoole.com 搭建过程
+# ✅ 技术路线总结：个人博客站点搭建过程
 
 ## 📌 项目目标
 
@@ -23,7 +23,7 @@ draft: false
 | 内容系统 | Markdown（文章）+ Frontmatter 元数据 |
 | 自动构建 | GitHub + Vercel（CI/CD） |
 | 图标/logo | AI 生成自定义图标（科技风） |
-| 自定义域名 | echoole.com（阿里云 DNS 配置） |
+| 自定义域名 | example.com（DNS 配置） |
 
 ## ⚙️ 搭建流程
 
@@ -50,7 +50,7 @@ pnpm dev
 
 ```bash
 git init
-git remote add origin https://github.com/yuhong2024/blog.git
+git remote add origin https://github.com/yourusername/blog.git
 git add .
 git commit -m "Initial commit"
 git push -u origin main
@@ -58,10 +58,10 @@ git push -u origin main
 
 - Vercel 自动部署生成 `.vercel.app` 访问地址
 
-### 4. 绑定自定义域名（阿里云）
+### 4. 绑定自定义域名
 
-- 添加 `echoole.com` 与 `www.echoole.com` 至 Vercel 项目
-- 阿里云解析设置：
+- 添加自定义域名至 Vercel 项目
+- DNS 解析设置：
   - `@` → A 记录 →xxxxxxxx
   - `www` → CNAME → `cname.vercel-dns.com.`
 
@@ -83,6 +83,6 @@ Vercel 自动重新构建并上线。
 
 ## 📦 项目成果展示
 
-- 访问地址：[https://echoole.com](https://echoole.com)
+- 访问地址：部署后的网站URL
 - 自动部署 + 自定义域名 + HTTPS + 图标美化
 - 内容结构清晰、写作体验极佳
