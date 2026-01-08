@@ -1,7 +1,7 @@
 ---
 title: "为什么我做了一个博客"
 published: 2025-05-02
-description: "分享搭建 echoler 博客的经历与动机"
+description: "分享搭建博客的经历与动机"
 tags: [博客, 技术随笔]
 category: 思考
 lang: zh
